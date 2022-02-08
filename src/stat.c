@@ -66,8 +66,13 @@ int input(int *a, int *n) {
 }
 
 void output(int *a, int *n) {
-    for(int *p = a; p - a < *n; p++) printf("%d ", *p);
-    printf("\n");
+    for(int *p = a; p - a < *n; p++){
+        if (p - a == *n - 1) {
+            printf("%d", *p);
+            return;
+        }
+        printf("%d ", *p);
+    }
 }
 
 

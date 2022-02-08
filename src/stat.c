@@ -38,6 +38,7 @@ int max(int *a, int *n) {
             max = *p;
     return max;
 }
+
 int min(int *a, int *n) {
     int min = a[0];
     for (int *p = a; p - a < *n; p++)
@@ -45,11 +46,13 @@ int min(int *a, int *n) {
             min = *p;
     return min;
 }
+
 double mean(int *a, int *n) {
     int sum = 0;
     for (int *p = a; p - a < *n; p++) sum = sum + *p;
     return (sum * 1.0) / *n;
 }
+
 double variance(int *a, int *n) {
     int sum = 0;
     for (int *p = a; p - a < *n; p++) sum = sum + (*p * *p);

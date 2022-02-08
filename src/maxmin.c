@@ -8,6 +8,10 @@ if(!scanf("%d %d %d", &x, &y, &z)) {
 printf("n/a");
 return -1;
 }
+if(getchar() != 10) {
+printf("n/a");
+return -1;
+}
 if ((int) x  != x || (int) y  != y || (int) z  != z) {
 printf("n/a");
 return -1;
